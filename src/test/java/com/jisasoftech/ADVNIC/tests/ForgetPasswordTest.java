@@ -100,6 +100,40 @@ public class ForgetPasswordTest extends BaseTest {
 	    login.clickOnCancelButton();
 	}
 	
+	@Test
+	public void verifyAlertMessageAfterSendOTP() {
+		login.enterUsername(ConfigReader.getProperty("usernameone"));
+		login.clickOnForgotPasswordLink();
+		login.enterNewPasswordInResetPasswordModalWindow(ConfigReader.getProperty("newpassword"));
+		login.clickSendOTPButton();
+		Alert alert= wait.until(ExpectedConditions.alertIsPresent());
+		String actualAlertMessage = alert.getText();
+		String expectedAlertMessage = "If the user exists, an email will be sent. Please check your inbox.";
+	    assertEquals(actualAlertMessage, expectedAlertMessage, "Incorrect Alert message");
+	    alert.accept();
+	}
+	
+	@Test
+	public void verifyAlertResetPassword() {
+		login.enterUsername(ConfigReader.getProperty("usernameone"));
+		login.clickOnForgotPasswordLink();
+		login.enterNewPasswordInResetPasswordModalWindow(ConfigReader.getProperty("newpassword"));
+		login.clickSendOTPButton();
+		Alert alert= wait.until(ExpectedConditions.alertIsPresent());
+		alert.accept();
+		String otp = RemoteOTPFetcher.fetchOTPFromServer();
+        if (otp == null) {
+            throw new RuntimeException("OTP not found in logs!");
+        }
+
+        login.enterOTP(otp);
+		login.clickSubmitButton();
+		Alert resetAlert= wait.until(ExpectedConditions.alertIsPresent());
+		String actualAlertMessageReset = resetAlert.getText();
+		String expectedAlertMessageReset = "Are you sure you want to Reset Password ?";
+		assertEquals(actualAlertMessageReset, expectedAlertMessageReset, "Incorrect alert message.");
+	}
+	
 	
 	
 	
