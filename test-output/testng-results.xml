@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-01-31T18:05:25 IST" name="Default suite" finished-at="2025-01-31T18:05:39 IST" duration-ms="13300">
+  <suite started-at="2025-02-03T18:11:16 IST" name="Default suite" finished-at="2025-02-03T18:11:27 IST" duration-ms="10921">
     <groups>
     </groups>
-    <test started-at="2025-01-31T18:05:25 IST" name="Default test" finished-at="2025-01-31T18:05:39 IST" duration-ms="13300">
+    <test started-at="2025-02-03T18:11:16 IST" name="Default test" finished-at="2025-02-03T18:11:27 IST" duration-ms="10921">
       <class name="com.jisasoftech.ADVNIC.tests.ForgetPasswordTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.jisasoftech.ADVNIC.tests.ForgetPasswordTest@1bb5a082]" started-at="2025-01-31T18:05:25 IST" name="setup" finished-at="2025-01-31T18:05:34 IST" duration-ms="8434" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.jisasoftech.ADVNIC.tests.ForgetPasswordTest@41d477ed]" started-at="2025-02-03T18:11:16 IST" name="setup" finished-at="2025-02-03T18:11:22 IST" duration-ms="6238" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifySubmitButtonClickableAfterEnteringAllDetails()[pri:0, instance:com.jisasoftech.ADVNIC.tests.ForgetPasswordTest@1bb5a082]" started-at="2025-01-31T18:05:34 IST" name="verifySubmitButtonClickableAfterEnteringAllDetails" finished-at="2025-01-31T18:05:38 IST" duration-ms="4538" status="PASS">
+        <test-method signature="verifyAlertResetPassword()[pri:0, instance:com.jisasoftech.ADVNIC.tests.ForgetPasswordTest@41d477ed]" started-at="2025-02-03T18:11:22 IST" name="verifyAlertResetPassword" finished-at="2025-02-03T18:11:26 IST" duration-ms="4294" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifySubmitButtonClickableAfterEnteringAllDetails -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.jisasoftech.ADVNIC.tests.ForgetPasswordTest@1bb5a082]" started-at="2025-01-31T18:05:38 IST" name="tearDown" finished-at="2025-01-31T18:05:39 IST" duration-ms="269" status="PASS">
+        </test-method> <!-- verifyAlertResetPassword -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.jisasoftech.ADVNIC.tests.ForgetPasswordTest@41d477ed]" started-at="2025-02-03T18:11:26 IST" name="tearDown" finished-at="2025-02-03T18:11:27 IST" duration-ms="332" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

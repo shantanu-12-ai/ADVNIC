@@ -5,9 +5,9 @@
     <classes>
       <class name="com.jisasoftech.ADVNIC.tests.ForgetPasswordTest">
         <methods>
+          <include name="verifyAlertResetPassword"/>
           <include name="setup"/>
           <include name="tearDown"/>
-          <include name="verifySubmitButtonClickableAfterEnteringAllDetails"/>
         </methods>
       </class> <!-- com.jisasoftech.ADVNIC.tests.ForgetPasswordTest -->
     </classes>

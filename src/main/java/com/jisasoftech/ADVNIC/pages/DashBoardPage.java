@@ -87,6 +87,12 @@ public class DashBoardPage {
     
     @FindBy(xpath = "//td[text()='Home Directory']/following-sibling::td")
     private WebElement homeDirectoryElement;
+    
+    @FindBy(css = "li.nav-item.menu-is-opening > a")
+    private WebElement applicationModuleLink;
+    
+    @FindBy(xpath = "//a[@href='/Adv/Applications/ApplicationList']/p[text()='Application Manager']")
+    private WebElement applicationManagerLink;
 
 	
 	
@@ -387,7 +393,13 @@ public class DashBoardPage {
     	return homeDirectoryElement.getText();
     }
     
+    public void clickOnApplicationModuleLink() {
+    	applicationModuleLink.click();
+    }
     
+    public void clickOnApplicationManagerLink() {
+    	applicationManagerLink.click();
+    }
     
 	}
 

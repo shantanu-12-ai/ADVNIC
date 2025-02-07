@@ -19,7 +19,7 @@ public class BaseTest {
 	public WebDriverWait wait;
 	
 	@BeforeClass
-	public void setup() {
+	public void setup() throws Exception{
 		WebDriverManagerUtil util = new WebDriverManagerUtil();
 		driver = WebDriverManagerUtil.initializeDriver();
 		driver.get(ConfigReader.getProperty("url"));
